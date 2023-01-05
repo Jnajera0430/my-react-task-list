@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 import { TaskContextProvider } from './context/TaskContext';
+import { BrowserRouter} from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react';
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  
     <TaskContextProvider>
-      <App />
+      <ChakraProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ChakraProvider>
     </TaskContextProvider>
     
-  </React.StrictMode>
+  
 )
 

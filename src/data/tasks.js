@@ -1,17 +1,22 @@
 export const tasks = [
     {
         id: 0,
-        title: "titulo 1",
-        description: "La description es una sola"
+        title: "agregar al local storag",
+        estado: true
     },
     {
         id: 1,
-        title: "titulo 1",
-        description: "La description es una sola"
+        title: "borrar del local storag",
+        estado:true
     },
     {
         id: 2,
-        title: "titulo 1",
-        description: "La description es una sola"
+        title: "editar del local storag",
+        estado:false
+    },
+    {
+        id: 3,
+        title: "enviar tarea",
+        estado: true
     }
 ]
